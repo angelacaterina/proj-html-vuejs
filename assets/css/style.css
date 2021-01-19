@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+#app.container{
+  width: 76%;
+  height: 100%;
+  background: red;
+  margin: 0 auto;
+}
+/* HEARDER */
+header#site_header{
+
+  height: 543px;
+  background: pink;
+}
+
+/* MAIN */
+main#main_content{
+  height: 3281px;
+  background: green;
+}
+/* FOOTER */
+footer#site_footer{
+  height: 272px;
+  background: blue;
+}
