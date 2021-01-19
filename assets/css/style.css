@@ -37,10 +37,17 @@ ul > li > a{
 /* a{
   text-decoration: none;
 } */
+
+.mx_33{
+  margin: 0 33px;
+}
+
+
 /* Style text*/
 .vidaloka_style{
   font-family: 'Vidaloka', serif;
 }
+
 
 /* HEARDER */
 header#site_header{
@@ -153,13 +160,66 @@ nav{
 /* MAIN */
 main#main_content{
   height: 3281px;
-  /* background: green; */
+  background: #F5F5F1;
 }
 
+/*** .foodie_journal ***/
 .foodie_journal{
-  height: 222px;
-  background: darkblue;
+  height: 300px;
+  text-align: center;
+  position: relative;
 }
+.box{
+  height: 350px;
+  background: white;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0 33px;
+  padding-bottom: 35px;
+}
+
+.box > .title{
+  margin: 23px 0;
+}
+.box > .title > .outer-line {
+  width: 38%;
+  border-bottom: 1px dashed #F1F0F0;
+  border-radius: 6px;
+}
+.box > .title > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box > .title > span.text {
+  color: #49494D;
+  padding: 0 28px;
+  font-size: 17px;
+}
+
+.col_3{
+  width: calc(100% / 3);
+}
+.col_3 > .card > img{
+  width: 100%;
+}
+.col_3 > .card > h3{
+  font-size: 17px;
+  margin: 6px 0;
+  line-height: 1.3;
+  font-weight: normal;
+}
+.col_3 > .card > p{
+  color: #736E67;
+  font-size: 13px;
+  /* margin-bottom: 30px; */
+}
+
+
+
+
+/*** ***/
 .popular_recipes{
   height: 625px;
   background: lightgrey;
@@ -174,7 +234,7 @@ main#main_content{
 }
 .subscribe{
   height: 348px;
-  background-image: url("../images/subscribe-sec-bg.png");
+  background-image: url("../images/main/subscribe-sec-bg.png");
   background-size: cover;
   background-position: center;
 }
