@@ -8,6 +8,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 #app{
   width: 100%;
@@ -20,22 +21,94 @@ body{
   width: 63%;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
+
+.d-flex{
+  display: flex;
+}
+.between{
+  justify-content: space-between;
+}
+
+ul > li > a{
+  text-decoration: none;
+}
+
 
 /* HEARDER */
 header#site_header{
-  height: 543px;
+  /* height: 543px; */
   /* background: pink; */
 }
-
+/*** nav ***/
 nav{
-  height: 145px;
-  background: red;
+  /* height: 145px; */
+  background: white;
 }
+/** app_social **/
+.app_social{
+  padding: 10px;
+}
+.app_social a,
+.app_social i{
+  color:#9C9894;
+  font-size: 12px;
+}
+.app_social a{
+  padding-right: 15px;
+}
+.app_social i{
+  padding-left: 10px;
+}
+/* app */
+.app ul > li{
+  list-style: none;
+  display: inline-block;
+}
+.app span{
+  color: white;
+  background: #FC7523;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/** logo **/
+.logo,
+.navbar{
+  display: flex;
+  justify-content: center;
+}
+/* .logo > img{
+  height: 100px;
+} */
+
+/* navbar */
+.navbar a{
+  color: #535357;
+  padding: 20px;
+  text-decoration: none;
+}
+.navbar a:first-child,
+.navbar a:hover{
+  color: #FC7523;
+}
+.navbar hr{
+  display: none;
+  border: 1px solid #FC7523;
+  margin: 5px 0;
+}
+.navbar a:first-child  hr,
+.navbar a:hover hr{
+  display: block;
+}
+
+/*** .banner ***/
 .banner{
-  height: 398px;
-  background: purple;
+  height: 530px;
+  background-image: url("../images/single-post-img3.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* MAIN */
@@ -62,7 +135,9 @@ main#main_content{
 }
 .subscribe{
   height: 348px;
-  background: brown;
+  background-image: url("../images/subscribe-sec-bg.png");
+  background-size: cover;
+  background-position: center;
 }
 .immagini{
   height: 180px;
