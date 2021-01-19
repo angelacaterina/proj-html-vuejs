@@ -34,7 +34,13 @@ body{
 ul > li > a{
   text-decoration: none;
 }
-
+/* a{
+  text-decoration: none;
+} */
+/* Style text*/
+.vidaloka_style{
+  font-family: 'Vidaloka', serif;
+}
 
 /* HEARDER */
 header#site_header{
@@ -79,12 +85,10 @@ nav{
   display: flex;
   justify-content: center;
 }
-/* .logo > img{
-  height: 100px;
-} */
 
 /* navbar */
 .navbar a{
+  font-size: 13px;
   color: #535357;
   padding: 20px;
   text-decoration: none;
@@ -109,6 +113,41 @@ nav{
   background-image: url("../images/single-post-img3.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.banner > .title_header{
+  background: white;
+  border-radius: 6px;
+  padding: 0 76px;
+  position: absolute;
+  top:27%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.title_header > h1{
+  margin-top: 37px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.title_header > p{
+  color: #736E67;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.banner > .title_header > .sticker{
+  font-size: 12px;
+  padding: 7px 20px;
+  color: white;
+  background: #FC7523;
+  border-radius: 6px;
+  box-shadow: 0 0 4px grey;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /* MAIN */

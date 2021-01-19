@@ -8,6 +8,9 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- css -->
@@ -22,34 +25,43 @@
         <div class="container">
           <div class="app_social d-flex between">
             <div class="app">
+              <!-- ??? <a href="#" v-for="link in app">{{link.text}} <span>{{link.spanText}}</span></a> ??? -->
               <ul>
                 <li><a href="#">Dowload App <span>ios</span></a></li>
                 <li><a href="#">Advertise with us</a></li>
               </ul>
-            </div>
+            </div><!-- /.app -->
             <div class="social">
-              <i class="fab fa-facebook-f"></i>
+              <i v-for="icon in social" :class="icon.name"></i>
+              <!-- <i class="fab fa-facebook-f"></i>
               <i class="fab fa-instagram"></i>
               <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i>
-            </div>
+              <i class="fab fa-youtube"></i> -->
+            </div><!-- /.social -->
           </div><!-- /.app_social -->
-          <div class="logo" >
-            <img src="assets/images/avada-food-logo.png" alt="">
+          <div class="logo">
+            <img :src="logo.name" alt="">
           </div><!-- /.logo -->
           <div class="navbar d-flex">
-            <a href="#">Home <hr></a>
-            <a href="#">Recipes <hr></a>
+            <a href="#"  v-for="link in navbar">{{link.text}}<hr></a>
+            <!-- <a href="#">Home <hr></a>
             <a href="#">Places <hr></a>
             <a href="#">Blog <hr></a>
             <a href="#">About <hr></a>
-            <a href="#">Contact <hr></a>
+            <a href="#">Contact <hr></a> -->
             <a href="#"><i class="fas fa-search"></i></a>
           </div><!-- /.navbar -->
         </div><!-- /.container -->
       </nav>
       <!-- /nav -->
-      <div class="banner"></div><!-- /.banner -->
+      <div class="banner">
+        <div class="title_header">
+          <div class="sticker">TODAY'S PICK</div>
+          <h1 class="vidaloka_style">{{banner.title}}<br>
+          {{banner.subTitle}}</h1>
+          <p class="vidaloka_style">{{banner.day}}</p>
+        </div>
+      </div><!-- /.banner -->
     </header>
     <!-- /#site_header -->
 
