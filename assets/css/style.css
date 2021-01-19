@@ -7,27 +7,78 @@
 body{
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
-#app.container{
-  width: 76%;
+#app{
+  width: 100%;
   height: 100%;
-  background: red;
   margin: 0 auto;
 }
+
+/* UTILITY */
+.container{
+  width: 63%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
 /* HEARDER */
 header#site_header{
-
   height: 543px;
-  background: pink;
+  /* background: pink; */
+}
+
+nav{
+  height: 145px;
+  background: red;
+}
+.banner{
+  height: 398px;
+  background: purple;
 }
 
 /* MAIN */
 main#main_content{
   height: 3281px;
-  background: green;
+  /* background: green; */
 }
+
+.foodie_journal{
+  height: 222px;
+  background: darkblue;
+}
+.popular_recipes{
+  height: 625px;
+  background: lightgrey;
+}
+.culinary_collection{
+  height: 420px;
+  background: red;
+}
+.farm_to_table{
+  height: 1486px;
+  background: yellow;
+}
+.subscribe{
+  height: 348px;
+  background: brown;
+}
+.immagini{
+  height: 180px;
+  background: pink;
+}
+
 /* FOOTER */
 footer#site_footer{
   height: 272px;
   background: blue;
+}
+.footer_main{
+  height: 225px;
+  background: grey;
+}
+.copyright{
+  height: 47px;
+  background: lime;
 }
