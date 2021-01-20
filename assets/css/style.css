@@ -42,16 +42,35 @@ ul > li > a{
   text-decoration: none;
 } */
 
+.bg_white{
+  background: white;
+}
 .mx_33{
   margin: 0 33px;
 }
-
+.ml_20{
+  margin-left: 20px;
+}
+.mr_20{
+  margin-right: 20px;
+}
+.ml_15{
+  margin-left: 15px;
+}
+.mr_15{
+  margin-right: 15px;
+}
+.mr_14{
+  margin-right: 14px;
+}
 
 /* Style text*/
 .vidaloka_style{
   font-family: 'Vidaloka', serif;
 }
-
+.t_center{
+  text-align: center;
+}
 
 /* HEARDER */
 header#site_header{
@@ -205,15 +224,17 @@ main#main_content{
 .col_3{
   width: calc(100% / 3);
 }
-.col_3 img{
+
+/* OVERLAY CARD */
+.card  img{
   width: 100%;
 }
-.col_3 > .card > h4{
+.card > h4{
   margin: 6px 0;
   line-height: 1.5;
   font-weight: normal;
 }
-.col_3 > .card > p{
+.card > p{
   color: #736E67;
   font-size: 12px;
   /* margin-bottom: 30px; */
@@ -221,13 +242,14 @@ main#main_content{
 .overlay{
   display: none;
   width: 100%;
-  height: 98%;
+  height: 99%;
   position: absolute;
   top: 0;
   left: 0;
   background: linear-gradient(180deg, rgba(158,43,34,0.8799894957983193) 10%, rgba(252,117,35,0.969625350140056) 97%);
 }
 .overlay > .info {
+  text-align: center;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -244,19 +266,76 @@ main#main_content{
 .overlay > .info > h5{
   color: white;
   margin-top: 10px;
+  font-size: 14px;
 }
 .item:hover .overlay {
   display: block;
   cursor: pointer;
 }
+/* /OVERLAY CARD */
 
 
-
-/*** ***/
-.popular_recipes{
-  height: 625px;
-  background: lightgrey;
+/*** .popular_recipes ***/
+.my_70{
+  margin: 70px 0;
 }
+.popular_recipes > .container > h4{
+  color: #49494D;
+  font-size: 17px;
+}
+.popular_recipes > .container > p{
+  padding: 25px 0;
+  font-size: 14px;
+  color: #736E67;
+  line-height: 1.5;
+}
+
+.section_text{
+  padding: 25px;
+  background: white;
+}
+.section_text > h4.title{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+.section_text > p.subtitle{
+  color: #736E67;
+  font-size: 12px;
+  font-weight: normal;
+}
+.section_text > div.outer-line{
+  margin-top: 17px;
+  margin-bottom: 17px;
+  border-bottom: 1px dotted #E8E6E6;
+  border-radius: 6px;
+}
+.section_text > p.paragraph{
+  color: #736E67;
+  font-size: 12.37px;
+  line-height: 1.5;
+}
+.section_text > button{
+  margin-top: 16px;
+  color: white;
+  background: #FC7523;
+  border-radius: 1px;
+  border: none;
+  padding: 8px 17px;
+  font-size: 12.37px;
+}
+.col_2{
+  width: calc(100% / 2);
+}
+.row_col_2{
+  width: calc(100% / 2);
+  margin-bottom: 6px;
+}
+.row_col_2 img{
+  width: 100%;
+}
+
+/*** .culinary_collection ***/
 .culinary_collection{
   height: 420px;
   background: red;
