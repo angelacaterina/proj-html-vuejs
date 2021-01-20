@@ -279,11 +279,11 @@ main#main_content{
 .my_70{
   margin: 70px 0;
 }
-.popular_recipes > .container > h4{
+.container > h4{
   color: #49494D;
   font-size: 17px;
 }
-.popular_recipes > .container > p{
+.container > p{
   padding: 25px 0;
   font-size: 14px;
   color: #736E67;
@@ -336,17 +336,49 @@ main#main_content{
 }
 
 /*** .culinary_collection ***/
-.culinary_collection{
-  height: 420px;
-  background: red;
+.py_40{
+  padding: 40px 0;
 }
+.image_icon{
+  /* flex-basis: calc(100% / 4); */
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box_icons{
+  width: calc(100% / 4);
+}
+.box_icons:not(:nth-of-type(4n+4)) .icon{
+  margin-right: 10px;
+}
+.icon{
+  height: 130px;
+  text-align: center;
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 1px 1px 10px lightgrey;
+}
+.icon > img{
+  width: 35%;
+}
+.icon > p{
+  font-size: 14px;
+  padding: 10px 0;
+}
+.icon:hover  p{
+  color: white;
+  background: #FC7523 ;
+}
+
+
+/*** .farm_to_table ***/
 .farm_to_table{
   height: 1486px;
   background: yellow;
 }
 .subscribe{
   height: 348px;
-  background-image: url("../images/main/subscribe-sec-bg.png");
+  background-image: url("../images/subscribe-sec-bg.png");
   background-size: cover;
   background-position: center;
 }

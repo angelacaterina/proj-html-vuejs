@@ -143,7 +143,7 @@
                       <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5>
                     </div><!-- /.info -->
                   </div><!-- /.overlay -->
-                  <img src="assets/images/main/Yogurt-Nan.jpg" alt="">
+                  <img src="assets/images/Yogurt-Nan.jpg" alt="">
                 </div><!-- /.item -->
                 <div class="section_text">
                   <h4 class="vidaloka_style title">Lunch Favourite with Salad, Naan And Beans</h4>
@@ -164,7 +164,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/Mixed-fruits.jpg" alt="">
+                    <img src="assets/images/Mixed-fruits.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
                 <div class="row_col_2">
@@ -175,7 +175,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/r-rachel-park-366508-unsplash-min.jpg" alt="">
+                    <img src="assets/images/r-rachel-park-366508-unsplash-min.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
               </div>
@@ -188,7 +188,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/r-michelle-tsang-500721-unsplash-min.jpg" alt="">
+                    <img src="assets/images/r-michelle-tsang-500721-unsplash-min.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
                 <div class="row_col_2">
@@ -199,7 +199,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/quick-summer-drink-460x295.jpg" alt="">
+                    <img src="assets/images/quick-summer-drink-460x295.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
               </div>
@@ -212,7 +212,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="">
+                    <img src="assets/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
                 <div class="row_col_2">
@@ -223,7 +223,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/perfect-cosmopolitan-460x295.jpg" alt="">
+                    <img src="assets/images/perfect-cosmopolitan-460x295.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
               </div>
@@ -236,7 +236,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/fi2x-6-460x295.jpg" alt="">
+                    <img src="assets/images/fi2x-6-460x295.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
                 <div class="row_col_2">
@@ -247,7 +247,7 @@
                         <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
                       </div><!-- /.info -->
                     </div><!-- /.overlay -->
-                    <img src="assets/images/main/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="">
+                    <img src="assets/images/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="">
                   </div><!-- /.item -->
                 </div><!-- /.row_col_2 -->
               </div>
@@ -256,8 +256,20 @@
         </div><!-- /.container -->
       </div><!-- /.popular_recipes -->
 
-      <div class="culinary_collection">
-        <div class="container"></div><!-- /.container -->
+      <div class="culinary_collection my_70 py_40">
+        <div class="container">
+          <h4 class="t_center">CULINARI COLLECTION</h4>
+          <p class="t_center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse <br> maximus lacus non nunc lobortis.</p>
+          <div class="d-flex image_icon">
+            <div v-for="icon in icons" class="box_icons">
+              <div class="icon">
+                <img :src="icon.url" alt="">
+                <p>{{icon.name}}</p>
+              </div>
+            </div>
+
+          </div><!-- /.d-flex -->
+        </div><!-- /.container -->
       </div><!-- /.culinary_collection -->
 
       <div class="farm_to_table">
