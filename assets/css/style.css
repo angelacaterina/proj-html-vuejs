@@ -76,6 +76,9 @@ body{
 .t_center{
   text-align: center;
 }
+.t_right{
+  justify-content: flex-end;
+}
 
 /* BACKGROUND and COLOR TEXT */
 .bg_white{
@@ -418,11 +421,7 @@ button:hover{
 
 
 /*** #farm_to_table ***/
-#farm_to_table button{
-  width: 100%;
-  color: black;
-  background: lightgrey;
-}
+
 /* .blog */
 .blog{
   width: 63%;
@@ -449,13 +448,35 @@ button:hover{
   font-size: 15px;
   text-align: center;
 }
+.blog button{
+  width: 100%;
+  color: black;
+  background: lightgrey;
+}
+
 /* aside */
 aside{
   width: 30%;
-  height: 300px;
-  background: blue;
   margin-left: 35px;
 }
+.recipes img{
+  width: 100%;
+  margin-top: 105px;
+}
+
+.city img{
+  width: 100%;
+  margin-top: 30px;
+}
+.bg_city{
+  text-align: center;
+  background: #FC7523 ;
+}
+.city a{
+  color: white;
+}
+
+
 /*** #subscribe ***/
 #subscribe{
   height: 530px;
