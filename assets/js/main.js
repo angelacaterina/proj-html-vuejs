@@ -1,15 +1,6 @@
 let app = new Vue({
   el: '#app',
   data: {
-    app:[
-      {
-        text:'Dowload App',
-        spanText: 'ios',
-      },
-      {
-        text:'Advertise with us',
-      }
-    ],
     social:[
       {
         name:'fab fa-facebook-f',
