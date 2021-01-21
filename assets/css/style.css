@@ -502,3 +502,29 @@ footer#site_footer{
   height: 47px;
   background: lime;
 }
+
+@media all and (min-width: 1600px)  and (max-width: 1800px){
+  #foodie_journal{
+    min-height: 500px;
+  }
+}
+@media all and (min-width: 1801px) and (max-width: 1940px){
+  #foodie_journal{
+    min-height: 550px;
+  }
+}
+@media all and (min-width: 1941px) and (max-width: 2286px){
+  #foodie_journal{
+    min-height: 600px;
+  }
+}
+@media all and (min-width: 2287px) and (max-width: 2620px){
+  #foodie_journal{
+    min-height: 650px;
+  }
+}
+@media all and (min-width: 2621px){
+  #foodie_journal{
+    min-height: 700px;
+  }
+}
