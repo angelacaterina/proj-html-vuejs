@@ -21,27 +21,26 @@
 <body>
   <div id="app" >
     <header id="site_header">
-      <nav>
-        <div class="container">
-          <div class="app_social d-flex between">
-            <div class="app">
-              <a href="#">Dowload App <span>ios</span></a>
-              <a href="#">Advertise with us</a>
-            </div><!-- /.app -->
-            <div class="social">
-              <i v-for="icon in social" :class="icon.name"></i>
-            </div><!-- /.social -->
-          </div><!-- /.app_social -->
-          <div class="logo">
-            <img :src="logo.name" alt="">
-          </div><!-- /.logo -->
-          <div class="navbar d-flex">
-            <a href="#"  v-for="link in navbar">{{link.text}}<hr></a>
-            <a href="#"><i class="fas fa-search"></i> <hr></a>
-          </div><!-- /.navbar -->
-        </div><!-- /.container -->
-      </nav>
-      <!-- /nav -->
+      <div class="container">
+        <div class="app_social d-flex between">
+          <div class="app">
+            <a href="#">Dowload App <span>ios</span></a>
+            <a href="#">Advertise with us</a>
+          </div><!-- /.app -->
+          <div class="social">
+            <i v-for="icon in social" :class="icon.name"></i>
+          </div><!-- /.social -->
+        </div><!-- /.app_social -->
+        <div class="logo">
+          <img :src="logo.name" alt="">
+        </div><!-- /.logo -->
+        <nav>
+          <a href="#" v-for="link in navbar">{{link.text}}<hr></a>
+          <a href="#" class="mb_11"><i class="fas fa-search"></i></a>
+        </nav>
+        <!-- /nav -->
+      </div><!-- /.container -->
+
       <div class="banner">
         <div class="title_header">
           <div class="sticker">TODAY'S PICK</div>
@@ -171,8 +170,12 @@
           <div class="d-flex image_icon">
             <div v-for="icon in icons" class="box_icons">
               <div class="icon">
-                <img :src="icon.url" alt="">
-                <p>{{icon.name}}</p>
+                <div>
+                  <img :src="icon.url" alt="">
+                </div>
+                <div>
+                  <p>{{icon.name}}</p>
+                </div>
               </div>
             </div>
           </div><!-- /.d-flex -->
@@ -195,7 +198,17 @@
       </div><!-- /.farm_to_table -->
 
       <div id="subscribe">
-        <div class="container"></div><!-- /.container -->
+        <div class="container_subscribe">
+          <div class="title_subcribe">
+            <h3 class="vidaloka_style">Subscribe <span>&</span> Receive A Free eBook</h3>
+            <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</p>
+          </div>
+          <div class="email_button d-flex between my_70">
+            <input type="email" name="" value="" placeholder="Insert your email..*">
+            <button type="button" name="button">SUBCRIBE</button>
+          </div>
+          <p>Cras porttitor pellentesque sem eu pretium.</p>
+        </div><!-- /.container_subscribe -->
       </div><!-- /.subscribe -->
 
       <div id="images" class="d-flex">

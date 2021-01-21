@@ -24,6 +24,9 @@ body{
   /* border: 1px solid black; */
 }
 
+.d-none{
+  display: none;
+}
 .d-flex{
   display: flex;
 }
@@ -57,6 +60,9 @@ body{
 .mr_14{
   margin-right: 14px;
 }
+.mb_11{
+  margin-bottom: 11px;
+}
 
 /* Style text*/
 .vidaloka_style{
@@ -66,7 +72,7 @@ body{
   text-align: center;
 }
 /* COLOR TEXT */
-h1,h2{
+h1,h2, h3{
   color: #333338;
 }
 p{
@@ -79,10 +85,13 @@ a{
 a:hover{
   color: #FC7523FC;
 }
+
+
 /* HEARDER */
 /*** nav ***/
-nav{
+head#site_header{
   background: white;
+
 }
 /** app_social **/
 .app_social{
@@ -111,34 +120,34 @@ nav{
 
 /** logo **/
 .logo,
-.navbar{
+nav{
   display: flex;
   justify-content: center;
 }
 
-/* navbar */
-.navbar{
+/** nav **/
+nav{
   height: 70px;
   align-items: center;
 }
-.navbar a{
+nav a{
   font-size: 16px;
 }
-.navbar a:not(:last-child){
+nav a:not(:last-child){
   padding-right: 70px;
 }
-.navbar a:first-child,
-.navbar a:hover{
+nav a:first-child,
+nav a:hover{
   color: #FC7523FC;
 }
-.navbar hr{
+nav hr{
   opacity: 0;
   border: 1px solid #FC7523FC;
   margin: 5px 0;
 }
-.navbar a:first-child  hr,
-.navbar a:hover hr,
-.navbar a:hover:not(:last-child) hr{
+nav a:first-child  hr,
+nav a:hover hr,
+nav a:hover:not(:last-child) hr{
   opacity: 1;
 }
 
@@ -148,6 +157,7 @@ nav{
   background-image: url("../images/single-post-img3.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  background-attachment: scroll;
   position: relative;
 }
 
@@ -381,26 +391,26 @@ button:hover{
   width: 100%;
 }
 .box_icons{
-  width: calc(100% / 4);
+  width: 25%!important;
 }
 .box_icons:not(:nth-of-type(4n+4)) .icon{
-  margin-right: 10px;
+  margin-right: 40px;
 }
 .icon{
   text-align: center;
   background: white;
-  margin: 15px 0;
+  margin: 10px 0 30px;
   padding: 15px;
   box-shadow: 1px 1px 10px lightgrey;
 }
-.icon > img{
-  width: 35%;
+.icon img{
+  width: 96px;
 }
-.icon > p{
+.icon p{
   font-size: 14px;
   padding: 10px 0;
 }
-.icon:hover  p{
+.icon > div:hover  p{
   color: white;
   background: #FC7523 ;
 }
@@ -408,19 +418,55 @@ button:hover{
 
 /*** #farm_to_table ***/
 #farm_to_table{
-  height: 1486px;
+  /* height: 1486px; */
   background: yellow;
 }
 
 /*** #subscribe ***/
 #subscribe{
-  height: 348px;
+  height: 530px;
+  background-color: white;
   background-image: url("../images/subscribe-sec-bg.png");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 100px 25px;
+}
+#subscribe > .container_subscribe{
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+}
+.title_subcribe > h3{
+  font-size: 35px;
+  margin: 20px 0;
+
+}
+.title_subcribe > p{
+  font-size: 17px;
+  margin: 0 0 20px;
+}
+.container_subscribe > p{
+  font-size: 14px;
+  margin: 0 0 20px;
 }
 
-
+.email_button{
+  width: 706px;
+  margin: 0 auto;
+  margin: 40px auto 50px;
+}
+.email_button input{
+  width: 100%;
+  padding: 0 16px;
+  margin-right: 15px;
+}
+.email_button button{
+  color: white;
+  font-size: 18px;
+  padding: 17px 40px;
+  margin-left: 10px;
+}
 /*** #images ***/
 #images > .item{
   width: calc(100% / 4);
@@ -431,7 +477,7 @@ button:hover{
 
 /* FOOTER */
 footer#site_footer{
-  height: 272px;
+  height: 500px;
   background: blue;
 }
 .footer_main{
