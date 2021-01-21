@@ -491,18 +491,25 @@ button:hover{
 
 /* FOOTER */
 footer#site_footer{
-  height: 500px;
   background: blue;
 }
 .footer_main{
   height: 225px;
-  background: grey;
+  background: white;
 }
 .copyright{
-  height: 47px;
-  background: lime;
+  background: #F5F5F1;
+  text-align: center;
+  font-size: 13px;
+  padding: 30px;
 }
-
+.copyright a{
+  color: #67615a;
+}
+.copyright a:hover{
+  color: #FC7523FC;
+}
+/*MEDIA QUERY */
 @media all and (min-width: 1600px)  and (max-width: 1800px){
   #foodie_journal{
     min-height: 500px;
