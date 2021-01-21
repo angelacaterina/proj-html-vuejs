@@ -21,12 +21,8 @@ body{
   width: 84%;
   height: 100%;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
-
-.d-none{
-  display: none;
-}
+/* DISPLAY and POSITION */
 .d-flex{
   display: flex;
 }
@@ -38,9 +34,12 @@ body{
   position: relative;
 }
 
-
-.bg_white{
-  background: white;
+/* MARGINI */
+.mb_70{
+  margin-bottom: 70px;
+}
+.pt_70{
+  padding-top: 70px;
 }
 .mx_33{
   margin: 0 33px;
@@ -64,14 +63,19 @@ body{
   margin-bottom: 11px;
 }
 
-/* Style text*/
+/* GOOGLE FONT and STYLE TEXT*/
 .vidaloka_style{
   font-family: 'Vidaloka', serif;
 }
 .t_center{
   text-align: center;
 }
-/* COLOR TEXT */
+
+/* BACKGROUND and COLOR TEXT */
+.bg_white{
+  background: white;
+}
+
 h1,h2, h3{
   color: #333338;
 }
@@ -85,14 +89,9 @@ a{
 a:hover{
   color: #FC7523FC;
 }
-
+/* /UTILITY */
 
 /* HEARDER */
-/*** nav ***/
-head#site_header{
-  background: white;
-
-}
 /** app_social **/
 .app_social{
   padding: 10px;
@@ -200,13 +199,12 @@ nav a:hover:not(:last-child) hr{
 
 /* MAIN */
 main#main_content{
-  height: 3281px;
   background: #F5F5F1;
 }
 
-/*** .foodie_journal ***/
-.foodie_journal{
-  height: 430px;
+/*** #foodie_journal ***/
+#foodie_journal{
+  min-height: 470px;
   text-align: center;
   position: relative;
 }
@@ -217,14 +215,17 @@ main#main_content{
   left: 50%;
   transform: translate(-50%, 0);
   padding: 1px 40px 10px;
+  z-index: 5;
 }
 
 .box > .title{
   margin: 30px 0 20px;
+  align-items: center;
+  justify-content: center;
 }
 .box > .title > .outer-line {
   width: 38%;
-  border-bottom: 1px dotted #F1F0F0;
+  border: 1px dotted #F1F0F0;
   border-radius: 6px;
 }
 .box > .title > span {
@@ -299,10 +300,8 @@ main#main_content{
 /* /OVERLAY CARD */
 
 
-/*** .popular_recipes ***/
-.my_70{
-  margin: 70px 0;
-}
+/*** #popular_recipes ***/
+
 .title_paragraph{
   width: 47%;
   margin: 0 auto;
@@ -347,7 +346,9 @@ main#main_content{
   margin: 0 0 20px;
 }
 
+/* BUTTONS */
 button{
+  color: white;
   background: #FC7523FC;
   border-radius: 2px;
   border: none;
@@ -355,13 +356,10 @@ button{
   line-height: 17px;
   font-size: 14px;
 }
-button > a,
-button:hover > a{
-  color: white;
-}
 button:hover{
   background: #ee5827;
 }
+/* /BUTTONS */
 
 .col_2{
   width: calc(100% / 2);
@@ -382,7 +380,7 @@ button:hover{
   width: 100%;
 }
 
-/*** .culinary_collection ***/
+/*** #culinary_collection ***/
 .py_40{
   padding: 40px 0;
 }
@@ -440,7 +438,10 @@ button:hover{
 .title_subcribe > h3{
   font-size: 35px;
   margin: 20px 0;
-
+  font-weight: normal;
+}
+.title_subcribe > h3 > span{
+  color:  #FC7523FC;
 }
 .title_subcribe > p{
   font-size: 17px;
@@ -458,8 +459,20 @@ button:hover{
 }
 .email_button input{
   width: 100%;
+  font-size: 16px;
+  color: #aaaaaa;
+  background-color: #ffffff;
   padding: 0 16px;
   margin-right: 15px;
+  border: 2px solid #E0E0DE;
+  border-radius: 3px;
+}
+.email_button input{
+  outline-color: #FC7523;
+}
+.email_button input:hover{
+  border: 2px solid #FEBA95;
+  border-radius: 3px;
 }
 .email_button button{
   color: white;
@@ -467,6 +480,7 @@ button:hover{
   padding: 17px 40px;
   margin-left: 10px;
 }
+
 /*** #images ***/
 #images > .item{
   width: calc(100% / 4);
