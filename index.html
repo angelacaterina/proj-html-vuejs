@@ -25,18 +25,11 @@
         <div class="container">
           <div class="app_social d-flex between">
             <div class="app">
-              <!-- ??? <a href="#" v-for="link in app">{{link.text}} <span>{{link.spanText}}</span></a> ??? -->
-              <ul>
-                <li><a href="#">Dowload App <span>ios</span></a></li>
-                <li><a href="#">Advertise with us</a></li>
-              </ul>
+              <a href="#">Dowload App <span>ios</span></a>
+              <a href="#">Advertise with us</a>
             </div><!-- /.app -->
             <div class="social">
               <i v-for="icon in social" :class="icon.name"></i>
-              <!-- <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i> -->
             </div><!-- /.social -->
           </div><!-- /.app_social -->
           <div class="logo">
@@ -44,12 +37,7 @@
           </div><!-- /.logo -->
           <div class="navbar d-flex">
             <a href="#"  v-for="link in navbar">{{link.text}}<hr></a>
-            <!-- <a href="#">Home <hr></a>
-            <a href="#">Places <hr></a>
-            <a href="#">Blog <hr></a>
-            <a href="#">About <hr></a>
-            <a href="#">Contact <hr></a> -->
-            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-search"></i> <hr></a>
           </div><!-- /.navbar -->
         </div><!-- /.container -->
       </nav>
@@ -57,8 +45,7 @@
       <div class="banner">
         <div class="title_header">
           <div class="sticker">TODAY'S PICK</div>
-          <h1 class="vidaloka_style">{{banner.title}}<br>
-          {{banner.subTitle}}</h1>
+          <h1 class="vidaloka_style"><a href="#">{{banner.title}}</a></h1>
           <p class="vidaloka_style">{{banner.day}}</p>
         </div>
       </div><!-- /.banner -->
@@ -80,15 +67,15 @@
                   <div class="overlay">
                     <div class="info">
                       <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Food Corner: Top Japanese<br>
-                      Restaurants for Sushi</h5>
+                      <h5 class="vidaloka_style">Food Corner: Top Japanese Restaurants for Sushi</h5>
                     </div><!-- /.info -->
                   </div><!-- /.overlay -->
                   <img src="assets/images/single-post-img3.jpg" alt="">
                 </div><!-- /.item -->
-                <h4 class="vidaloka_style">Food Corner: Top Japanese<br>
-                Restaurants for Sushi</h4>
-                <p class="vidaloka_style">By admin &verbar; March 25,2019</p>
+                <div class="box_text">
+                  <h2 class="vidaloka_style"><a href="#">Food Corner: Top Japanese Restaurants for Sushi</a></h2>
+                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+                </div><!-- /.box_text -->
               </div><!-- /.card -->
             </div><!-- /.col_3 -->
             <div class="col_3 mx_33">
@@ -97,15 +84,15 @@
                   <div class="overlay">
                     <div class="info">
                       <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Roundup: My New Favorite<br>
-                      Recipes For Healthy Living</h5>
+                      <h5 class="vidaloka_style">Roundup: My New Favorite Recipes For Healthy Living</h5>
                     </div><!-- /.info -->
                   </div><!-- /.overlay -->
-                  <img src="assets/images/main/fi-roundup.jpg" alt="">
+                  <img src="assets/images/fi-roundup.jpg" alt="">
                 </div><!-- /.item -->
-                <h4 class="vidaloka_style">Roundup: My New Favorite<br>
-                Recipes For Healthy Living</h4>
-                <p class="vidaloka_style"> By admin &verbar; March 25,2019</p>
+                <div class="box_text">
+                  <h2 class="vidaloka_style"><a href="#">Roundup: My New Favorite Recipes For Healthy Living</a></h2>
+                  <p class="vidaloka_style">By <a href="">admin</a> &verbar; March 25,2019</p>
+                </div><!-- /.box_text -->
               </div><!-- /.card -->
             </div><!-- /.col_3 -->
             <div class="col_3">
@@ -114,15 +101,15 @@
                   <div class="overlay">
                     <div class="info">
                       <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Why These Toasts with Tea are<br>
-                      My New Favorite</h5>
+                      <h5 class="vidaloka_style">Why These Toasts with Tea are My New Favorite</h5>
                     </div><!-- /.info -->
                   </div><!-- /.overlay -->
-                  <img src="assets/images/main/fi-toasts.jpg" alt="">
+                  <img src="assets/images/fi-toasts.jpg" alt="">
                 </div><!-- /.item -->
-                <h4 class="vidaloka_style">Why These Toasts with Tea are<br>
-                My New Favorite</h4>
-                <p class="vidaloka_style">By admin &verbar; March 25,2019</p>
+                <div class="box_text">
+                  <h2 class="vidaloka_style"><a href="#">Why These Toasts with Tea are My New Favorite</a></h2>
+                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+                </div><!-- /.box_text -->
               </div><!-- /.card -->
             </div><!-- /.col_3 -->
           </div>
@@ -131,8 +118,10 @@
 
       <div class="popular_recipes my_70">
         <div class="container">
-          <h4 class="t_center">POPULAR RECIPES</h4>
-          <p class="t_center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse <br> maximus lacus non nunc lobortis.</p>
+          <div class="title_paragraph">
+            <h2 class="t_center">POPULAR RECIPES</h2>
+            <p class="t_center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lobortis.</p>
+          </div><!-- /.title_paragraph -->
           <div class="d-flex">
             <div class="col_2 mr_20 bg_white">
               <div class="card pos_rel">
@@ -146,120 +135,39 @@
                   <img src="assets/images/Yogurt-Nan.jpg" alt="">
                 </div><!-- /.item -->
                 <div class="section_text">
-                  <h4 class="vidaloka_style title">Lunch Favourite with Salad, Naan And Beans</h4>
-                  <p class="subtitle">Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
+                  <h2 class="vidaloka_style title"><a href="#">Lunch Favourite with Salad, Naan And Beans</a></h2>
+                  <p class="subtitle"><a href="#">Bakery</a>, <a href="#">Featured</a>, <a href="#">Healthy</a>, <a href="#">Latest</a>, <a href="#">Recipes</a>, <a href="#">Staff Picks</a></p>
                   <div class="outer-line"></div>
-                  <p class="paragraph">Suspendisse at sempre odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidut posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id</p>
-                  <button type="button" name="button"> LAERN MORE</button>
+                  <div class="paragraph">
+                    <p>Suspendisse at sempre odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidut posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id</p>
+                  </div>
+                  <button type="button" name="button"><a href="#">LAERN MORE</a></button>
                 </div><!-- /.section_text -->
               </div><!-- /.card -->
-            </div>
-            <div class="col_2 ml_20">
-              <div class="d-flex">
-                <div class="row_col_2 mr_15">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/Mixed-fruits.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-                <div class="row_col_2">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/r-rachel-park-366508-unsplash-min.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-              </div>
-              <div class="d-flex">
-                <div class="row_col_2 mr_15">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/r-michelle-tsang-500721-unsplash-min.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-                <div class="row_col_2">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/quick-summer-drink-460x295.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-              </div>
-              <div class="d-flex">
-                <div class="row_col_2 mr_15">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-                <div class="row_col_2">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/perfect-cosmopolitan-460x295.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-              </div>
-              <div class="d-flex">
-                <div class="row_col_2 mr_15">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/fi2x-6-460x295.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-                <div class="row_col_2">
-                  <div class="item pos_rel">
-                    <div class="overlay">
-                      <div class="info">
-                        <i class="fas fa-link"></i>
-                        <!-- <h5 class="vidaloka_style">Lunch Favourite with Salad, Naan And Beans</h5> -->
-                      </div><!-- /.info -->
-                    </div><!-- /.overlay -->
-                    <img src="assets/images/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="">
-                  </div><!-- /.item -->
-                </div><!-- /.row_col_2 -->
-              </div>
-            </div>
-          </div>
+            </div><!-- /.col_2 -->
+            <div class="col_2 ml_20 d-flex wrap">
+              <div class="insert" v-for="text in popularRecipes">
+                <div class="item pos_rel">
+                  <div class="overlay">
+                    <div class="info">
+                      <i :class="text.icon"></i>
+                      <h5 class="vidaloka_style">{{text.title}}</h5>
+                    </div><!-- /.info -->
+                  </div><!-- /.overlay -->
+                  <img :src="text.url" alt="">
+                </div><!-- /.item -->
+              </div><!-- /.insert -->
+            </div><!-- /.col_2 -->
+          </div><!-- /.d-flex -->
         </div><!-- /.container -->
       </div><!-- /.popular_recipes -->
 
       <div class="culinary_collection my_70 py_40">
         <div class="container">
-          <h4 class="t_center">CULINARI COLLECTION</h4>
-          <p class="t_center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse <br> maximus lacus non nunc lobortis.</p>
+          <div class="title_paragraph">
+            <h2 class="t_center">CULINARI COLLECTION</h2>
+            <p class="t_center">Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lobortis.</p>
+          </div>
           <div class="d-flex image_icon">
             <div v-for="icon in icons" class="box_icons">
               <div class="icon">
@@ -267,20 +175,40 @@
                 <p>{{icon.name}}</p>
               </div>
             </div>
-
           </div><!-- /.d-flex -->
         </div><!-- /.container -->
       </div><!-- /.culinary_collection -->
 
-      <div class="farm_to_table">
-        <div class="container"></div><!-- /.container -->
+      <div id="farm_to_table">
+        <div class="container">
+          <div class="blog">
+            <div class="title_paragraph">
+              <h2> FARN TO TABLE</h2>
+              <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lobortis.</p>
+            </div><!-- /.title_paragraph -->
+          </div>
+          <!-- /.blog -->
+
+          <aside class=""></aside>
+          <!-- /aside -->
+        </div><!-- /.container -->
       </div><!-- /.farm_to_table -->
 
-      <div class="subscribe">
+      <div id="subscribe">
         <div class="container"></div><!-- /.container -->
       </div><!-- /.subscribe -->
 
-      <div class="immagini"></div><!-- /.copyright -->
+      <div id="images" class="d-flex">
+        <div class="item pos_rel" v-for="img in image">
+          <div class="overlay">
+            <div class="info">
+              <i :class="img.icon"></i>
+              <h5 class="vidaloka_style">{{img.title}}</h5>
+            </div><!-- /.info -->
+          </div><!-- /.overlay -->
+          <img :src="img.url" alt="">
+        </div><!-- /.item -->
+      </div><!-- /.copyright -->
     </main>
     <!-- /#main_content -->
 
