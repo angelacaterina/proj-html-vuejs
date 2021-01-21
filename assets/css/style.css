@@ -8,7 +8,7 @@ body{
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Catamaran', sans-serif;
 }
 #app{
   width: 100%;
@@ -97,7 +97,7 @@ a:hover{
   padding: 10px;
 }
 .app_social a,
-.app_social i{
+i{
   color: #67615a;
 }
 .app_social a{
@@ -225,15 +225,14 @@ main#main_content{
 }
 .box > .title > .outer-line {
   width: 38%;
-  border: 1px dotted #F1F0F0;
+  border-bottom: 1px dotted #E8E6E6;
   border-radius: 6px;
 }
 .box > .title > span {
   display: inline-block;
   vertical-align: middle;
 }
-.box > .title > span.text {
-  color: #49494D;
+.box > .title > h2 {
   padding: 0 45px;
   font-size: 21px;
 }
@@ -490,13 +489,75 @@ button:hover{
 }
 
 /* FOOTER */
-footer#site_footer{
-  background: blue;
-}
+/*** .footer_main ***/
 .footer_main{
-  height: 225px;
   background: white;
+  padding: 75px 10px;
 }
+.footer_main i{
+  margin: 0px 5px 15px;
+  padding: 5px;
+}
+.footer_main h4{
+  color: #FC7523;
+  font-size: 16px;
+  /* margin-left: 10px; */
+  margin-bottom: 14px;
+}
+.footer_main a{
+  font-size: 18px;
+}
+
+/** #logo_social **/
+#logo_social img{
+  width: 100%;
+}
+
+/** #link_nav **/
+#link_nav{
+  flex-direction: column;
+  padding: 0 25px;
+}
+#link_nav a{
+  font-weight: bold;
+  padding: 8px 10px 8px 20px;
+}
+
+/** #contact **/
+#contact,
+#get_app{
+  padding: 0 25px;
+}
+#contact ul > li{
+  list-style: none;
+  padding: 0 0 10px;
+}
+#contact .info_contact:first-of-type  a{
+  color: #67615a;
+}
+#contact i{
+  margin-right: 12px;
+  color: #93908C;
+}
+
+/** #get_app **/
+.app_image img{
+  width: 100%;
+}
+.app_image img:hover{
+  cursor: pointer;
+}
+
+/* COLONNE */
+.col_4{
+  width: calc(100% / 4);
+  padding: 0 20px;
+}
+.col_4:not(:last-child){
+  border-right: 1px dashed #e0dede;
+}
+
+/*** .copyright ***/
 .copyright{
   background: #F5F5F1;
   text-align: center;
@@ -509,6 +570,8 @@ footer#site_footer{
 .copyright a:hover{
   color: #FC7523FC;
 }
+
+
 /*MEDIA QUERY */
 @media all and (min-width: 1600px)  and (max-width: 1800px){
   #foodie_journal{

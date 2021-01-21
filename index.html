@@ -7,7 +7,7 @@
   <title>Avada Food</title>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
@@ -28,13 +28,14 @@
             <a href="#">Advertise with us</a>
           </div><!-- /.app -->
           <div class="social">
-            <i v-for="icon in social" :class="icon.name"></i>
+            <i v-for="icon in social" :class="icon.iconName"></i>
           </div><!-- /.social -->
         </div><!-- /.app_social -->
         <div class="logo">
           <img :src="logo.name" alt="">
         </div><!-- /.logo -->
         <nav>
+          <a href="#">Home<hr></a>
           <a href="#" v-for="link in navbar">{{link.text}}<hr></a>
           <a href="#" class="mb_11"><i class="fas fa-search"></i></a>
         </nav>
@@ -54,9 +55,9 @@
       <div id="foodie_journal">
         <div class="container box">
           <div class="title d-flex">
-            <hr class="outer-line">
-            <span class="text">FOODIE JOURNAL</span>
-            <hr class="outer-line">
+            <div class="outer-line"></div>
+            <h2>FOODIE JOURNAL</h2>
+            <div class="outer-line"></div>
           </div>
           <div class="d-flex">
             <div class="col_3">
@@ -226,7 +227,35 @@
 
     <footer id="site_footer">
       <div class="footer_main">
-        <div class="container"></div><!-- /.container -->
+        <div class="container d-flex">
+          <div id="logo_social" class="col_4">
+            <img src="assets/images/avada-food-logo-mob.png" alt="">
+            <div class="social">
+              <i v-for="icon in social" :class="icon.iconName"></i>
+            </div><!-- /.social -->
+          </div>
+          <div id="link_nav" class="col_4 d-flex">
+            <a href="#" v-for="link in navbar">{{link.text}}</a>
+          </div>
+          <div id="contact" class="col_4">
+            <h4>CONTACT</h4>
+            <div v-for="link in contact" class="info_contact">
+              <ul>
+                <li class="d-flex">
+                  <i :class="link.iconName"></i>
+                  <div><a href="#">{{link.info}}</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="get_app" class="col_4">
+            <h4>GET OUR APP!</h4>
+            <div class="app_image" v-for="image in get_app">
+              <img :src="image.imageUrl" alt="">
+            </div>
+
+          </div>
+        </div><!-- /.container -->
       </div><!-- /.footer_main -->
 
       <div class="copyright">

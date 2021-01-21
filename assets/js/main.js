@@ -3,16 +3,16 @@ let app = new Vue({
   data: {
     social:[
       {
-        name:'fab fa-facebook-f',
+        iconName:'fab fa-facebook-f',
       },
       {
-        name:'fab fa-instagram',
+        iconName:'fab fa-instagram',
       },
       {
-        name:'fab fa-twitter',
+        iconName:'fab fa-twitter',
       },
       {
-        name:'fab fa-youtube',
+        iconName:'fab fa-youtube',
       }
     ],
     logo: {
@@ -20,10 +20,7 @@ let app = new Vue({
     },
     navbar:[
       {
-        text: 'Home',
-      },
-      {
-        text: 'Replice',
+        text: 'Recipes',
       },
       {
         text: 'Places',
@@ -139,6 +136,33 @@ let app = new Vue({
         title:'Ice Cream Heaven With Vanilla, Chocolate And Pistachio',
         url: 'assets/images/r-michelle-tsang-500721-unsplash-min.jpg',
       },
+    ],
+    contact:[
+      {
+        type: 'location',
+        iconName: 'fas fa-map-marker-alt',
+        info:'775 New York Ave, Brooklyn, Kings, New York 11203',
+      },
+      {
+        type: 'phone',
+        iconName:'fas fa-phone',
+        info:'+ 0100-505-0000',
+      },
+      {
+        type: 'email',
+        iconName:'fas fa-envelope',
+        info:'info@your-domain.com',
+      }
+    ],
+    get_app:[
+      {
+        type: 'Android',
+        imageUrl:'assets/images/download-android.png',
+      },
+      {
+        type:'Apple',
+        imageUrl:'assets/images/download-app-store.png',
+      }
     ],
 
   }
