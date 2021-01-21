@@ -182,13 +182,55 @@
         </div><!-- /.container -->
       </div><!-- /.culinary_collection -->
 
-      <div id="farm_to_table">
-        <div class="container">
+      <div id="farm_to_table" class="mb_70 pt_70">
+        <div class="container d-flex">
           <div class="blog">
-            <div class="title_paragraph">
+            <div class="title_blog">
               <h2> FARN TO TABLE</h2>
               <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lobortis.</p>
-            </div><!-- /.title_paragraph -->
+            </div><!-- /.title_blog -->
+
+
+            <div class="card pos_rel bg_white">
+              <div class="item pos_rel">
+                <div class="overlay">
+                  <div class="info">
+                    <i class="fas fa-link"></i>
+                    <h5 class="vidaloka_style">Food Corner: Top Japanese Restaurants for Sushi</h5>
+                  </div><!-- /.info -->
+                </div><!-- /.overlay -->
+                <img src="assets/images/single-post-img3.jpg" alt="">
+              </div><!-- /.item -->
+              <div class="section_text">
+                <h2 class="vidaloka_style title"><a href="#">Food Corner: Top Japanese Restaurants for Sushi</a></h2>
+                <p class="subtitle">By <a href="#">admin</a> &verbar; March 25,2019</p>
+                <div class="outer-line"></div>
+                <div class="paragraph">
+                  <p>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex.</p>
+                </div>
+              </div><!-- /.section_text -->
+            </div><!-- /.card -->
+
+
+            <div class="d-flex wrap my_50">
+              <div class=" insert bg_white" v-for="text in farmToTable">
+                <div class="item pos_rel">
+                  <div class="overlay">
+                    <div class="info">
+                      <i :class="text.icon"></i>
+                      <h5 class="vidaloka_style">{{text.title}}</h5>
+                    </div><!-- /.info -->
+                  </div><!-- /.overlay -->
+                  <img :src="text.url" alt="">
+                </div><!-- /.item -->
+                <div class="box_text">
+                  <h2 class="vidaloka_style"><a href="#">{{text.title}}</a></h2>
+                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+                </div><!-- /.box_text -->
+              </div>
+            </div>
+
+            <button type="button" name="button">LOAD MORE POSTS</button>
           </div>
           <!-- /.blog -->
 

@@ -164,6 +164,39 @@ let app = new Vue({
         imageUrl:'assets/images/download-app-store.png',
       }
     ],
+    farmToTable:[
+      {
+        icon: 'fas fa-link',
+        title:'Roundup: My New Favorite Recipes For Healthy Living',
+        url: 'assets/images/fi-roundup.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Meal Prep: Korean Bibimbap with Kimchi',
+        url: 'assets/images/fi-korean-food.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Why These Toasts with Tea are My New Favorite',
+        url: 'assets/images/fi-toasts.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Exploring Street Food in Bangkok',
+        url: 'assets/images/fi-street-food.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Organic Choices For Healthier Living',
+        url: 'assets/images/fi-organic-breakfast.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'5 Waterside Restaurants in Istanbul for Special Events',
+        url: 'assets/images/fi-water-side-rest.jpg',
+      },
+
+    ],
 
   }
 })
