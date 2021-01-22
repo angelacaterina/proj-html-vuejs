@@ -441,15 +441,30 @@ button:hover{
   font-size: 17px;
   line-height: 1.5;
 }
+.commenti i{
+  color: #333338;
+}
 
-.insert .box_text{
+
+.blog .insert{
+  width: calc(100% / 2);
+  padding: 20px 0;
+}
+.blog .insert:not(:nth-of-type(2n+2)){
+  padding-right: 20px;
+}
+.blog .insert:not(:nth-of-type(2n+1)){
+  padding-left: 20px;
+}
+
+.blog .insert .box_text{
   padding: 15px 25px 30px;
 }
-.insert .box_text > h2{
+.blog .insert .box_text > h2{
   font-size: 22px;
   text-align: center;
 }
-.insert .box_text > p{
+.blog .insert .box_text > p{
   font-size: 15px;
   text-align: center;
 }
