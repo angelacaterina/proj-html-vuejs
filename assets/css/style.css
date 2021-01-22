@@ -9,11 +9,11 @@ body{
   height: 100vh;
   overflow-x: hidden;
   font-family: 'Catamaran', sans-serif;
+  background: #F5F5F1;
 }
 #app{
   width: 100%;
   height: 100%;
-  margin: 0 auto;
 }
 
 /* UTILITY */
@@ -22,12 +22,30 @@ body{
   height: 100%;
   margin: 0 auto;
 }
+/* COLONNE */
+.col_2{
+  width: calc(100% / 2);
+}
+.col_3{
+  width: calc(100% / 3);
+}
+.col_4{
+  width: calc(100% / 4);
+  padding: 0 20px;
+}
+.col_4:not(:last-child){
+  border-right: 1px dashed #e0dede;
+}
+
 /* DISPLAY and POSITION */
 .d-flex{
   display: flex;
 }
 .between{
   justify-content: space-between;
+}
+.j_center{
+  justify-content: center;
 }
 .wrap{
   flex-wrap: wrap;
@@ -46,6 +64,9 @@ body{
 }
 .my_50{
   margin: 50px 0;
+}
+.py_40{
+  padding: 40px 0;
 }
 .mx_33{
   margin: 0 33px;
@@ -68,7 +89,6 @@ body{
 .mb_11{
   margin-bottom: 11px;
 }
-
 
 /* GOOGLE FONT and STYLE TEXT*/
 .vidaloka_style{
@@ -100,156 +120,6 @@ a:hover{
   color: #FC7523FC;
 }
 /* /UTILITY */
-
-/* HEARDER */
-/** app_social **/
-.app_social{
-  padding: 10px;
-}
-.app_social a,
-i{
-  color: #67615a;
-}
-.app_social a{
-  padding-right: 13px;
-  font-size: 12px;
-}
-.app_social i{
-  margin: 0px 5px 15px;
-  padding: 8px;
-}
-/* app */
-.app span{
-  color: white;
-  background: #FC7523;
-  padding: 3px 4px;
-  margin-left: 6px;
-  border-radius: 4px;
-}
-
-/** logo **/
-.logo,
-nav{
-  display: flex;
-  justify-content: center;
-}
-
-/** nav **/
-nav{
-  height: 70px;
-  align-items: center;
-}
-nav a{
-  font-size: 16px;
-}
-nav a:not(:last-child){
-  padding-right: 70px;
-}
-nav a:first-child,
-nav a:hover{
-  color: #FC7523FC;
-}
-nav hr{
-  opacity: 0;
-  border: 1px solid #FC7523FC;
-  margin: 5px 0;
-}
-nav a:first-child  hr,
-nav a:hover hr,
-nav a:hover:not(:last-child) hr{
-  opacity: 1;
-}
-
-/*** .banner ***/
-.banner{
-  height: 700px;
-  background-image: url("../images/single-post-img3.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: scroll;
-  position: relative;
-}
-
-.banner > .title_header{
-  width: 706px;
-  text-align: center;
-  background: white;
-  border-radius: 6px;
-  position: absolute;
-  top: 27%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.title_header > h1{
-  margin-top: 37px;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 45px;
-}
-.title_header:hover > h1 a{
-  color: #FC7523FC;
-}
-.title_header > p{
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.banner > .title_header > .sticker{
-  font-size: 16px;
-  padding: 7px 34px;
-  color: white;
-  background: #FC7523;
-  border-radius: 6px;
-  box-shadow: 0 0 4px grey;
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-/* MAIN */
-main#main_content{
-  background: #F5F5F1;
-}
-
-/*** #foodie_journal ***/
-#foodie_journal{
-  min-height: 470px;
-  text-align: center;
-  position: relative;
-}
-.box{
-  background: white;
-  position: absolute;
-  top: -15%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 1px 40px 10px;
-  z-index: 5;
-}
-
-.box > .title{
-  margin: 30px 0 20px;
-  align-items: center;
-  justify-content: center;
-}
-.box > .title > .outer-line {
-  width: 38%;
-  border-bottom: 1px dotted #E8E6E6;
-  border-radius: 6px;
-}
-.box > .title > span {
-  display: inline-block;
-  vertical-align: middle;
-}
-.box > .title > h2 {
-  padding: 0 45px;
-  font-size: 21px;
-}
-
-.col_3{
-  width: calc(100% / 3);
-}
 
 /* OVERLAY CARD */
 .card  img{
@@ -309,8 +179,146 @@ main#main_content{
 /* /OVERLAY CARD */
 
 
-/*** #popular_recipes ***/
+/* HEARDER */
+/** app_social **/
+.app_social{
+  padding: 10px;
+}
+.app_social a,
+i{
+  color: #67615a;
+}
+.app_social a{
+  padding-right: 13px;
+  font-size: 12px;
+}
+.app_social i{
+  margin: 0px 5px 15px;
+  padding: 8px;
+}
+/* app */
+.app span{
+  color: white;
+  background: #FC7523;
+  padding: 3px 4px;
+  margin-left: 6px;
+  border-radius: 4px;
+}
 
+/* SEZIONE NAVBAR */
+nav{
+  height: 70px;
+  align-items: center;
+}
+nav a{
+  font-size: 16px;
+}
+nav a:not(:last-child){
+  padding-right: 70px;
+}
+nav a:first-child,
+nav a:hover{
+  color: #FC7523FC;
+}
+nav hr{
+  opacity: 0;
+  border: 1px solid #FC7523FC;
+  margin: 5px 0;
+}
+nav a:first-child  hr,
+nav a:hover hr,
+nav a:hover:not(:last-child) hr{
+  opacity: 1;
+}
+/* CHIUSURA HEADER */
+
+/* SEZIONE BANNER */
+/*** .banner ***/
+.banner{
+  height: 700px;
+  background-image: url("../images/single-post-img3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  position: relative;
+}
+.banner > .title_header{
+  width: 706px;
+  text-align: center;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.title_header > h1{
+  margin-top: 37px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 45px;
+}
+.title_header:hover > h1 a{
+  color: #FC7523FC;
+}
+.title_header > p{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner > .title_header > .sticker{
+  font-size: 16px;
+  padding: 7px 34px;
+  color: white;
+  background: #FC7523;
+  border-radius: 6px;
+  box-shadow: 0 0 4px grey;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/** #foodie_journal **/
+#foodie_journal{
+  /* min-height: 470px; */
+  text-align: center;
+  position: relative;
+  top: -9%;
+}
+
+.box{
+  background: white;
+  /* position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  padding: 1px 40px 10px;
+  /* z-index: 5; */
+}
+.box > .title{
+  margin: 30px 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+.box > .title > .outer-line {
+  width: 38%;
+  border-bottom: 1px dotted #E8E6E6;
+  border-radius: 6px;
+}
+.box > .title > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box > .title > h2 {
+  padding: 0 45px;
+  font-size: 21px;
+}
+/* CHIUSURA BANNER */
+
+/* MAIN UTILITY*/
+/* TITOLO e PARAGRAFO (#popular_recipes / #culinary_collection)*/
 .title_paragraph{
   width: 47%;
   margin: 0 auto;
@@ -325,7 +333,27 @@ main#main_content{
   font-size: 17px;
   line-height: 1.5;
 }
+/* CHIUSURA TITOLO e PARAGRAFO */
 
+/* BUTTONS */
+button{
+  color: white;
+  background: #FC7523FC;
+  border-radius: 2px;
+  border: none;
+  padding: 13px 29px;
+  line-height: 17px;
+  font-size: 14px;
+}
+button:hover{
+  background: #ee5827;
+}
+/* /BUTTONS */
+
+/* CHIUSURA MAIN UTILITY */
+
+/* MAIN */
+/*** 1 #popular_recipes ***/
 .section_text{
   padding: 25px 35px;
   background: white;
@@ -355,26 +383,7 @@ main#main_content{
   margin: 0 0 20px;
 }
 
-/* BUTTONS */
-button{
-  color: white;
-  background: #FC7523FC;
-  border-radius: 2px;
-  border: none;
-  padding: 13px 29px;
-  line-height: 17px;
-  font-size: 14px;
-}
-button:hover{
-  background: #ee5827;
-}
-/* /BUTTONS */
-
-.col_2{
-  width: calc(100% / 2);
-}
-
-
+/* Immagini inestate nella colonna */
 .insert{
   width: calc(100% / 2);
   padding: 12px;
@@ -387,10 +396,7 @@ button:hover{
   width: 100%;
 }
 
-/*** #culinary_collection ***/
-.py_40{
-  padding: 40px 0;
-}
+/*** 2 #culinary_collection ***/
 .image_icon{
   flex-wrap: wrap;
   width: 100%;
@@ -420,9 +426,7 @@ button:hover{
   background: #FC7523 ;
 }
 
-
-/*** #farm_to_table ***/
-
+/*** 3 #farm_to_table ***/
 /* .blog */
 .blog{
   width: 63%;
@@ -445,7 +449,7 @@ button:hover{
   color: #333338;
 }
 
-
+/* CARD con testo innestate nella colonna */
 .blog .insert{
   width: calc(100% / 2);
   padding: 20px 0;
@@ -456,7 +460,6 @@ button:hover{
 .blog .insert:not(:nth-of-type(2n+1)){
   padding-left: 20px;
 }
-
 .blog .insert .box_text{
   padding: 15px 25px 30px;
 }
@@ -501,7 +504,7 @@ aside{
 }
 
 
-/*** #subscribe ***/
+/*** 4 #subscribe ***/
 #subscribe{
   background-color: white;
   background-image: url("../images/subscribe-sec-bg.png");
@@ -561,13 +564,14 @@ aside{
   margin-left: 10px;
 }
 
-/*** #images ***/
+/*** 5 #images ***/
 #images > .item{
   width: calc(100% / 4);
 }
 #images img{
   width: 100%;
 }
+/* CHIUSURA MAIN */
 
 /* FOOTER */
 /*** .footer_main ***/
@@ -629,15 +633,6 @@ aside{
   cursor: pointer;
 }
 
-/* COLONNE */
-.col_4{
-  width: calc(100% / 4);
-  padding: 0 20px;
-}
-.col_4:not(:last-child){
-  border-right: 1px dashed #e0dede;
-}
-
 /*** .copyright ***/
 .copyright{
   background: #F5F5F1;
@@ -651,10 +646,10 @@ aside{
 .copyright a:hover{
   color: #FC7523FC;
 }
-
+/* HIUSURA FOOTER */
 
 /*MEDIA QUERY */
-@media all and (min-width: 1600px)  and (max-width: 1800px){
+/* @media all and (min-width: 1600px)  and (max-width: 1800px){
   #foodie_journal{
     min-height: 500px;
   }
@@ -678,4 +673,4 @@ aside{
   #foodie_journal{
     min-height: 700px;
   }
-}
+} */

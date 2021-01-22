@@ -20,6 +20,7 @@
 </head>
 <body>
   <div id="app">
+    <!-- HEADER -->
     <header id="site_header" class="bg_white">
       <div class="container">
         <div class="app_social d-flex between">
@@ -33,94 +34,97 @@
           </div><!-- /.social -->
         </div><!-- /.app_social -->
 
-        <div class="logo">
+        <div class="logo d-flex j_center">
           <img :src="logo.name" alt="">
         </div><!-- /.logo -->
 
         <!-- Navbar -->
-        <nav>
+        <nav  class="d-flex j_center">
           <a href="#">Home<hr></a>
           <a href="#" v-for="link in navbar">{{link.text}}<hr></a>
           <a href="#" class="mb_11"><i class="fas fa-search"></i></a>
         </nav>
         <!-- /nav -->
       </div><!-- /.container -->
-      <!-- Banner da inserire nel MAIN come prima sezione -->
-      <div class="banner">
-        <div class="title_header">
-          <div class="sticker">TODAY'S PICK</div>
-          <h1 class="vidaloka_style"><a href="#">{{banner.title}}</a></h1>
-          <p class="vidaloka_style">{{banner.day}}</p>
-        </div>
-      </div><!-- /.banner -->
-
     </header>
     <!-- /#site_header -->
+    <!-- CHIUSURA HEADER -->
 
+    <!-- BANNER -->
+    <div class="banner">
+      <div class="title_header">
+        <div class="sticker">TODAY'S PICK</div>
+        <h1 class="vidaloka_style"><a href="#">{{banner.title}}</a></h1>
+        <p class="vidaloka_style">{{banner.day}}</p>
+      </div>
+    </div><!-- /.banner -->
+    <div id="foodie_journal">
+      <div class="container box">
+        <div class="title d-flex">
+          <div class="outer-line"></div>
+          <h2>FOODIE JOURNAL</h2>
+          <div class="outer-line"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col_3">
+            <div class="card pos_rel">
+              <div class="item pos_rel">
+                <div class="overlay">
+                  <div class="info">
+                    <i class="fas fa-link"></i>
+                    <h5 class="vidaloka_style">Food Corner: Top Japanese Restaurants for Sushi</h5>
+                  </div><!-- /.info -->
+                </div><!-- /.overlay -->
+                <img src="assets/images/single-post-img3.jpg" alt="">
+              </div><!-- /.item -->
+              <div class="box_text">
+                <h2 class="vidaloka_style"><a href="#">Food Corner: Top Japanese Restaurants for Sushi</a></h2>
+                <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+              </div><!-- /.box_text -->
+            </div><!-- /.card -->
+          </div><!-- /.col_3 -->
+          <div class="col_3 mx_33">
+            <div class="card pos_rel">
+              <div class="item pos_rel">
+                <div class="overlay">
+                  <div class="info">
+                    <i class="fas fa-link"></i>
+                    <h5 class="vidaloka_style">Roundup: My New Favorite Recipes For Healthy Living</h5>
+                  </div><!-- /.info -->
+                </div><!-- /.overlay -->
+                <img src="assets/images/fi-roundup.jpg" alt="">
+              </div><!-- /.item -->
+              <div class="box_text">
+                <h2 class="vidaloka_style"><a href="#">Roundup: My New Favorite Recipes For Healthy Living</a></h2>
+                <p class="vidaloka_style">By <a href="">admin</a> &verbar; March 25,2019</p>
+              </div><!-- /.box_text -->
+            </div><!-- /.card -->
+          </div><!-- /.col_3 -->
+          <div class="col_3">
+            <div class="card pos_rel">
+              <div class="item pos_rel">
+                <div class="overlay">
+                  <div class="info">
+                    <i class="fas fa-link"></i>
+                    <h5 class="vidaloka_style">Why These Toasts with Tea are My New Favorite</h5>
+                  </div><!-- /.info -->
+                </div><!-- /.overlay -->
+                <img src="assets/images/fi-toasts.jpg" alt="">
+              </div><!-- /.item -->
+              <div class="box_text">
+                <h2 class="vidaloka_style"><a href="#">Why These Toasts with Tea are My New Favorite</a></h2>
+                <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+              </div><!-- /.box_text -->
+            </div><!-- /.card -->
+          </div><!-- /.col_3 -->
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.foodie_journal -->
+    <!-- CHIUSURA BANNER -->
+
+    <!-- MAIN -->
     <main id="main_content">
-      <div id="foodie_journal">
-        <div class="container box">
-          <div class="title d-flex">
-            <div class="outer-line"></div>
-            <h2>FOODIE JOURNAL</h2>
-            <div class="outer-line"></div>
-          </div>
-          <div class="d-flex">
-            <div class="col_3">
-              <div class="card pos_rel">
-                <div class="item pos_rel">
-                  <div class="overlay">
-                    <div class="info">
-                      <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Food Corner: Top Japanese Restaurants for Sushi</h5>
-                    </div><!-- /.info -->
-                  </div><!-- /.overlay -->
-                  <img src="assets/images/single-post-img3.jpg" alt="">
-                </div><!-- /.item -->
-                <div class="box_text">
-                  <h2 class="vidaloka_style"><a href="#">Food Corner: Top Japanese Restaurants for Sushi</a></h2>
-                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
-                </div><!-- /.box_text -->
-              </div><!-- /.card -->
-            </div><!-- /.col_3 -->
-            <div class="col_3 mx_33">
-              <div class="card pos_rel">
-                <div class="item pos_rel">
-                  <div class="overlay">
-                    <div class="info">
-                      <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Roundup: My New Favorite Recipes For Healthy Living</h5>
-                    </div><!-- /.info -->
-                  </div><!-- /.overlay -->
-                  <img src="assets/images/fi-roundup.jpg" alt="">
-                </div><!-- /.item -->
-                <div class="box_text">
-                  <h2 class="vidaloka_style"><a href="#">Roundup: My New Favorite Recipes For Healthy Living</a></h2>
-                  <p class="vidaloka_style">By <a href="">admin</a> &verbar; March 25,2019</p>
-                </div><!-- /.box_text -->
-              </div><!-- /.card -->
-            </div><!-- /.col_3 -->
-            <div class="col_3">
-              <div class="card pos_rel">
-                <div class="item pos_rel">
-                  <div class="overlay">
-                    <div class="info">
-                      <i class="fas fa-link"></i>
-                      <h5 class="vidaloka_style">Why These Toasts with Tea are My New Favorite</h5>
-                    </div><!-- /.info -->
-                  </div><!-- /.overlay -->
-                  <img src="assets/images/fi-toasts.jpg" alt="">
-                </div><!-- /.item -->
-                <div class="box_text">
-                  <h2 class="vidaloka_style"><a href="#">Why These Toasts with Tea are My New Favorite</a></h2>
-                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
-                </div><!-- /.box_text -->
-              </div><!-- /.card -->
-            </div><!-- /.col_3 -->
-          </div>
-        </div><!-- /.container -->
-      </div><!-- /.foodie_journal -->
-
+      <!-- Articolo e colonne Immagini -->
       <div id="popular_recipes" class="mb_70 pt_70">
         <div class="container">
           <div class="title_paragraph">
@@ -166,7 +170,7 @@
           </div><!-- /.d-flex -->
         </div><!-- /.container -->
       </div><!-- /.popular_recipes -->
-
+      <!-- Card categorie -->
       <div id="culinary_collection" class=" my_70 py_40">
         <div class="container">
           <div class="title_paragraph">
@@ -187,7 +191,7 @@
           </div><!-- /.d-flex -->
         </div><!-- /.container -->
       </div><!-- /.culinary_collection -->
-
+      <!-- Aticolo con Card di articoli e SIDEBAR -->
       <div id="farm_to_table" class="mb_70 pt_70">
         <div class="container d-flex">
           <div class="blog">
@@ -268,7 +272,6 @@
           <!-- /aside -->
         </div><!-- /.container -->
       </div><!-- /.farm_to_table -->
-
       <!-- Iscrizione alla "newsletter" -->
       <div id="subscribe">
         <div class="container_subscribe">
@@ -283,7 +286,6 @@
           <p>Cras porttitor pellentesque sem eu pretium.</p>
         </div><!-- /.container_subscribe -->
       </div><!-- /.subscribe -->
-
       <!-- Quattro immagini //VueJs -->
       <div id="images" class="d-flex">
         <div class="item pos_rel" v-for="img in image">
@@ -296,10 +298,11 @@
           <img :src="img.url" alt="">
         </div><!-- /.item -->
       </div><!-- /.copyright -->
-
     </main>
     <!-- /#main_content -->
+    <!-- CHIUSURA MAIN -->
 
+    <!-- FOOTER -->
     <footer id="site_footer">
       <div class="footer_main">
         <div class="container d-flex">
@@ -340,6 +343,7 @@
       </div><!-- /.copyright -->
     </footer>
     <!-- /#site_footer -->
+    <!-- CHIUSURA FOOTER -->
   </div>
   <!-- /#app -->
 
