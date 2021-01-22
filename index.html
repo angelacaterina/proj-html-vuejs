@@ -7,7 +7,7 @@
   <title>Avada Food</title>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-  <div id="app" >
+  <div id="app">
     <header id="site_header" class="bg_white">
       <div class="container">
         <div class="app_social d-flex between">
@@ -27,13 +27,17 @@
             <a href="#">Download App<span>iOS</span></a>
             <a href="#">Advertise with us</a>
           </div><!-- /.app -->
+
           <div class="social">
             <i v-for="icon in social" :class="icon.iconName"></i>
           </div><!-- /.social -->
         </div><!-- /.app_social -->
+
         <div class="logo">
           <img :src="logo.name" alt="">
         </div><!-- /.logo -->
+
+        <!-- Navbar -->
         <nav>
           <a href="#">Home<hr></a>
           <a href="#" v-for="link in navbar">{{link.text}}<hr></a>
@@ -41,7 +45,7 @@
         </nav>
         <!-- /nav -->
       </div><!-- /.container -->
-
+      <!-- Banner da inserire nel MAIN come prima sezione -->
       <div class="banner">
         <div class="title_header">
           <div class="sticker">TODAY'S PICK</div>
@@ -49,8 +53,10 @@
           <p class="vidaloka_style">{{banner.day}}</p>
         </div>
       </div><!-- /.banner -->
+
     </header>
     <!-- /#site_header -->
+
     <main id="main_content">
       <div id="foodie_journal">
         <div class="container box">
@@ -185,11 +191,12 @@
       <div id="farm_to_table" class="mb_70 pt_70">
         <div class="container d-flex">
           <div class="blog">
+            <!-- titolo e paragrafo -->
             <div class="title_blog">
               <h2> FARN TO TABLE</h2>
               <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lobortis.</p>
             </div><!-- /.title_blog -->
-
+            <!-- Immagine con titolo e paragrafo -->
             <div class="card pos_rel bg_white">
               <div class="item pos_rel">
                 <div class="overlay">
@@ -209,25 +216,28 @@
                 </div>
               </div><!-- /.section_text -->
             </div><!-- /.card -->
-
+            
+            <!-- Card Immagini su due colonne con titolo //VueJs -->
             <div class="d-flex wrap my_50">
-              <div class=" insert bg_white" v-for="text in farmToTable">
-                <div class="item pos_rel">
-                  <div class="overlay">
-                    <div class="info">
-                      <i :class="text.icon"></i>
-                      <h5 class="vidaloka_style">{{text.title}}</h5>
-                    </div><!-- /.info -->
-                  </div><!-- /.overlay -->
-                  <img :src="text.url" alt="">
-                </div><!-- /.item -->
-                <div class="box_text">
-                  <h2 class="vidaloka_style"><a href="#">{{text.title}}</a></h2>
-                  <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
-                </div><!-- /.box_text -->
+              <div class=" insert" v-for="text in farmToTable">
+                <div class="card pos_rel bg_white">
+                  <div class="item pos_rel">
+                    <div class="overlay">
+                      <div class="info">
+                        <i :class="text.icon"></i>
+                        <h5 class="vidaloka_style">{{text.title}}</h5>
+                      </div><!-- /.info -->
+                    </div><!-- /.overlay -->
+                    <img :src="text.url" alt="">
+                  </div><!-- /.item -->
+                  <div class="box_text">
+                    <h2 class="vidaloka_style"><a href="#">{{text.title}}</a></h2>
+                    <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
+                  </div><!-- /.box_text -->
+                </div><!-- /.card -->
               </div>
             </div>
-
+            <!-- Bottone per aggiungere altre Card con immagini, per la sezione sopra-->
             <button type="button" name="button">LOAD MORE POSTS</button>
           </div>
           <!-- /.blog -->
@@ -250,6 +260,7 @@
         </div><!-- /.container -->
       </div><!-- /.farm_to_table -->
 
+      <!-- Iscrizione alla "newsletter" -->
       <div id="subscribe">
         <div class="container_subscribe">
           <div class="title_subcribe">
@@ -264,6 +275,7 @@
         </div><!-- /.container_subscribe -->
       </div><!-- /.subscribe -->
 
+      <!-- Quattro immagini //VueJs -->
       <div id="images" class="d-flex">
         <div class="item pos_rel" v-for="img in image">
           <div class="overlay">
@@ -275,6 +287,7 @@
           <img :src="img.url" alt="">
         </div><!-- /.item -->
       </div><!-- /.copyright -->
+
     </main>
     <!-- /#main_content -->
 

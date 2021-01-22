@@ -69,6 +69,7 @@ body{
   margin-bottom: 11px;
 }
 
+
 /* GOOGLE FONT and STYLE TEXT*/
 .vidaloka_style{
   font-family: 'Vidaloka', serif;
@@ -440,6 +441,10 @@ button:hover{
   font-size: 17px;
   line-height: 1.5;
 }
+
+.insert .box_text{
+  padding: 15px 25px 30px;
+}
 .insert .box_text > h2{
   font-size: 22px;
   text-align: center;
@@ -449,10 +454,14 @@ button:hover{
   text-align: center;
 }
 .blog button{
-  width: 100%;
   color: black;
-  background: lightgrey;
+  font-weight: 700;
+  font-size: 17px;
+  width: 100%;
+  background: #EDEDE7;
+  padding: 17px 29px;
 }
+
 
 /* aside */
 aside{
@@ -479,7 +488,6 @@ aside{
 
 /*** #subscribe ***/
 #subscribe{
-  height: 530px;
   background-color: white;
   background-image: url("../images/subscribe-sec-bg.png");
   background-size: cover;
