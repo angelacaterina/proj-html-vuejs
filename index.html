@@ -66,53 +66,19 @@
           <div class="outer-line"></div>
         </div>
         <div class="d-flex">
-          <div class="col_3">
-            <div class="card pos_rel">
+          <div class="col_3" v-for="text in foodieJournal">
+            <div class="card pos_rel bg_white">
               <div class="item pos_rel">
                 <div class="overlay">
                   <div class="info">
-                    <i class="fas fa-link"></i>
-                    <h5 class="vidaloka_style">Food Corner: Top Japanese Restaurants for Sushi</h5>
+                    <i :class="text.icon"></i>
+                    <h5 class="vidaloka_style">{{text.title}}</h5>
                   </div><!-- /.info -->
                 </div><!-- /.overlay -->
-                <img src="assets/images/single-post-img3.jpg" alt="">
+                <img :src="text.url" alt="">
               </div><!-- /.item -->
               <div class="box_text">
-                <h2 class="vidaloka_style"><a href="#">Food Corner: Top Japanese Restaurants for Sushi</a></h2>
-                <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
-              </div><!-- /.box_text -->
-            </div><!-- /.card -->
-          </div><!-- /.col_3 -->
-          <div class="col_3 mx_33">
-            <div class="card pos_rel">
-              <div class="item pos_rel">
-                <div class="overlay">
-                  <div class="info">
-                    <i class="fas fa-link"></i>
-                    <h5 class="vidaloka_style">Roundup: My New Favorite Recipes For Healthy Living</h5>
-                  </div><!-- /.info -->
-                </div><!-- /.overlay -->
-                <img src="assets/images/fi-roundup.jpg" alt="">
-              </div><!-- /.item -->
-              <div class="box_text">
-                <h2 class="vidaloka_style"><a href="#">Roundup: My New Favorite Recipes For Healthy Living</a></h2>
-                <p class="vidaloka_style">By <a href="">admin</a> &verbar; March 25,2019</p>
-              </div><!-- /.box_text -->
-            </div><!-- /.card -->
-          </div><!-- /.col_3 -->
-          <div class="col_3">
-            <div class="card pos_rel">
-              <div class="item pos_rel">
-                <div class="overlay">
-                  <div class="info">
-                    <i class="fas fa-link"></i>
-                    <h5 class="vidaloka_style">Why These Toasts with Tea are My New Favorite</h5>
-                  </div><!-- /.info -->
-                </div><!-- /.overlay -->
-                <img src="assets/images/fi-toasts.jpg" alt="">
-              </div><!-- /.item -->
-              <div class="box_text">
-                <h2 class="vidaloka_style"><a href="#">Why These Toasts with Tea are My New Favorite</a></h2>
+                <h2 class="vidaloka_style"><a href="#">{{text.title}}</a></h2>
                 <p class="vidaloka_style">By <a href="#">admin</a> &verbar; March 25,2019</p>
               </div><!-- /.box_text -->
             </div><!-- /.card -->

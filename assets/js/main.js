@@ -39,6 +39,23 @@ let app = new Vue({
       title: 'Food Corner: Top Japanese Restaurants for Sushi',
       day: 'March 25,2019',
     },
+    foodieJournal:[
+      {
+        icon: 'fas fa-link',
+        title:'Food Corner: Top Japanese Restaurants for Sushi',
+        url: 'assets/images/single-post-img3.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Roundup: My New Favourite Recipes For Healthy Living',
+        url: 'assets/images/fi-roundup.jpg',
+      },
+      {
+        icon: 'fas fa-link',
+        title:'Why These Toasts with Tea are My New Favorite',
+        url: 'assets/images/fi-toasts.jpg',
+      }
+    ],
     icons:[
       {
         name:'DRINKS',
