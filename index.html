@@ -225,16 +225,75 @@
             <div class="button d-flex t_right">
               <button type="button" name="button">READ OUR BLOG</button>
             </div>
-            <div class="recipes">
+
+            <div class="recipes pos_rel">
               <img src="assets/images/ad-bg.jpg" alt="">
-            </div>
-            <div class="city">
-            
-              <img src="assets/images/singapore-featured-image.jpg" alt="">
-              <div class="bg_city">
-                <a href="#">VIEW ALL CITY GUIDES</a>
+              <div class="lates_recipes">
+                <h3>VIEW OUR LATEST RECIPES</h3>
               </div>
             </div>
+
+            <div class="city  pos_rel">
+              <img src="assets/images/singapore-featured-image.jpg" alt="">
+              <div class="city_title">
+                <h2>City Guide: Singapore</h2>
+              </div>
+              <button type="button" name="button" class="bg_city">
+                <i class="fas fa-globe-americas"></i>
+                <a href="#">VIEW ALL CITY GUIDES</a>
+              </button>
+              <!-- <div class="bg_city">
+                <i class="fas fa-globe-americas"></i>
+                <a href="#">VIEW ALL CITY GUIDES</a>
+              </div> -->
+            </div>
+
+            <div class="follow mt_46">
+
+            <input type="search" name="" value="" placeholder="Search...">
+
+            <h4 class="vidaloka_style">Follow Us</h4>
+
+            <div class="button_social">
+              <i v-for="icon in social" :class="icon.iconName"></i><i class="fab fa-pinterest-p"></i>
+            </div>
+
+            <div class="d-flex my_40">
+              <div class="col_2 popular vidaloka_style">
+                <a href="#">Popular</a>
+              </div>
+              <div class="col_2 recent vidaloka_style">
+                <a href="#">Recent</a>
+              </div>
+            </div>
+
+            <div class="articoli_recenti">
+              <div class="d-flex articoli">
+                <div class="image_article bgI_1"></div>
+                <div class="text_article">
+                  <a href="#">Food Corner: Top Japanese Restaurants for Sushi</a>
+                  <p>March 25th, 2019</p>
+                </div>
+              </div>
+
+              <div class="d-flex articoli">
+                <div class="image_article bgI_2"></div>
+                <div class="text_article">
+                  <a href="#">City Guide: Singapore</a>
+                  <p>February 27th, 2019</p>
+                </div>
+              </div>
+
+              <div class="d-flex articoli">
+                <div class="image_article bgI_3"></div>
+                <div class="text_article">
+                  <a href="#">6 Nutritional Tips to Help Burn Body Fat</a>
+                  <p>February 28th, 2019</p>
+                </div>
+              </div>
+
+            </div>
+
           </aside>
           <!-- /aside -->
         </div><!-- /.container -->
