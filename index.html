@@ -6,11 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Avada Food</title>
   <!-- google fonts -->
+  <!-- Catamaran -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <!-- vidaloka -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+  <!-- roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <!-- Open Sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- css -->
@@ -20,6 +28,27 @@
 </head>
 <body>
   <div id="app">
+    <!-- toogle -->
+    <div class="toggles open_sans_style">
+      <div class="toggle_demo">
+        <div class="icon_toggle icona">
+          <div class="linea_corta"></div>
+          <div class="linea_lunga"></div>
+          <div class="rettangolo">
+            <i class="fab fa-atlassian"></i>
+          </div>
+        </div>
+        <span class="text_toggle">Demos</span>
+      </div>
+      <!-- buy -->
+      <div class="toggle_sale">
+        <div class="icon_toggle">
+          <span class="helvetica_style"><sup>$</sup>39</span>
+        </div>
+        <span class="text_toggle">On Sales</span>
+      </div>
+      <!-- /Buy -->
+    </div>
     <!-- HEADER -->
     <header id="site_header" class="bg_white">
       <div class="container">
@@ -222,17 +251,22 @@
           <!-- /.blog -->
 
           <aside>
+            <!-- Bottone -->
             <div class="button d-flex t_right">
-              <button type="button" name="button">READ OUR BLOG</button>
+              <button type="button" name="button">READ OUR BLOG
+                <i class="fas fa-book-reader"></i>
+              </button>
             </div>
-
+            <!-- /Bottone -->
+            <!-- Poster -->
             <div class="recipes pos_rel">
               <img src="assets/images/ad-bg.jpg" alt="">
               <div class="lates_recipes">
                 <h3>VIEW OUR LATEST RECIPES</h3>
               </div>
             </div>
-
+            <!-- /Poster -->
+            <!-- View City -->
             <div class="city  pos_rel">
               <img src="assets/images/singapore-featured-image.jpg" alt="">
               <div class="city_title">
@@ -247,17 +281,20 @@
                 <a href="#">VIEW ALL CITY GUIDES</a>
               </div> -->
             </div>
-
+            <!-- /View City -->
+            <!-- Search  -->
             <div class="follow mt_46">
 
-            <input type="search" name="" value="" placeholder="Search...">
+              <input type="search" name="" value="" placeholder="Search...">
 
-            <h4 class="vidaloka_style">Follow Us</h4>
+              <h4 class="vidaloka_style">Follow Us</h4>
 
-            <div class="button_social">
-              <i v-for="icon in social" :class="icon.iconName"></i><i class="fab fa-pinterest-p"></i>
+              <div class="button_social">
+                <i v-for="icon in social" :class="icon.iconName"></i><i class="fab fa-pinterest-p"></i>
+              </div>
             </div>
-
+            <!-- /Search  -->
+            <!-- Follow social -->
             <div class="d-flex my_40">
               <div class="col_2 popular vidaloka_style">
                 <a href="#">Popular</a>
@@ -266,34 +303,80 @@
                 <a href="#">Recent</a>
               </div>
             </div>
-
+            <!-- /Follow social -->
+            <!-- Articoli recenti -->
             <div class="articoli_recenti">
               <div class="d-flex articoli">
-                <div class="image_article bgI_1"></div>
-                <div class="text_article">
-                  <a href="#">Food Corner: Top Japanese Restaurants for Sushi</a>
-                  <p>March 25th, 2019</p>
+                  <div class="image_article bgI_1"></div>
+                  <div class="text_article">
+                    <a href="#">Food Corner: Top Japanese Restaurants for Sushi</a>
+                    <p>March 25th, 2019</p>
+                  </div>
                 </div>
-              </div>
 
               <div class="d-flex articoli">
-                <div class="image_article bgI_2"></div>
-                <div class="text_article">
-                  <a href="#">City Guide: Singapore</a>
-                  <p>February 27th, 2019</p>
+                  <div class="image_article bgI_2"></div>
+                  <div class="text_article">
+                    <a href="#">City Guide: Singapore</a>
+                    <p>February 27th, 2019</p>
+                  </div>
                 </div>
-              </div>
 
               <div class="d-flex articoli">
-                <div class="image_article bgI_3"></div>
-                <div class="text_article">
-                  <a href="#">6 Nutritional Tips to Help Burn Body Fat</a>
-                  <p>February 28th, 2019</p>
+                  <div class="image_article bgI_3"></div>
+                  <div class="text_article">
+                    <a href="#">6 Nutritional Tips to Help Burn Body Fat</a>
+                    <p>February 28th, 2019</p>
+                  </div>
                 </div>
-              </div>
-
             </div>
+            <!-- /Articoli recenti -->
+            <!-- Tweets -->
+            <div class="tweets helvetica_style">
+              <div class="title_logo_tweet">
+                <div class="title_tweet">
+                  <h1>Tweets <span class="link_tweet">by <a href="#">@Theme_Fusion</a></span></h1>
+                </div>
 
+                <div class="logo_tweet">
+                  <a href="#">i</a>
+                </div>
+              </div>
+              <!-- /title_logo -->
+              <div class="card_tweet">
+                <div class="tweet_author">
+                  <img src="assets/images/3a74ce3d0532b7773b174c45ca3bd05a_bigger.png" alt="">
+
+                  <div class="author">
+                    <span id="title">ThemeFusion</span>
+                    <span id="subtitle">@Theme_Fusion</span>
+
+                    <div class="icon_tweet">
+                      <i class="fab fa-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="tweet_text">
+                  Do you need sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have sesured just for you, &amp; launch your site in seconds with <a href="#"><span>#avada</span></a> on WP Engine hosting &amp; get 30% Off this Black Friday <a href="#"><span>bit.ly/3kjLLE2</span></a> <a href="#"><span>#BlackFriday2020</span></a>
+                </p>
+
+                <div class="tweet_media">
+                  <img src="assets/images/En2TRxLW4AEiWUN.jpeg" alt="">
+                </div>
+
+                <div class="tweet_actions">
+                  <div class="">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                  <span>21h</span>
+                </div>
+
+              </div>
+              <!-- /card_tweet -->
+            </div>
+            <!-- /Tweets -->
           </aside>
           <!-- /aside -->
         </div><!-- /.container -->

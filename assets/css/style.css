@@ -14,6 +14,7 @@ body{
 #app{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 /* UTILITY */
@@ -100,6 +101,12 @@ body{
 .vidaloka_style{
   font-family: 'Vidaloka', serif;
 }
+.helvetica_style{
+  font-family: 'Roboto', sans-serif;
+}
+.open_sans_style{
+  font-family: 'Open Sans', sans-serif;
+}
 .t_center{
   text-align: center;
 }
@@ -133,6 +140,7 @@ a:hover{
 /* OVERLAY CARD */
 .card  img{
   width: 100%;
+  display: block;
 }
 
 .box_text{
@@ -152,7 +160,7 @@ a:hover{
 .overlay{
   opacity: 0;
   width: 100%;
-  height: 98%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -187,8 +195,83 @@ a:hover{
 }
 /* /OVERLAY CARD */
 
+/* TOOGLES */
+.toggles{
+  height: 100vh;
+  position: fixed;
+  top: 150px;
+  right: 15px;
+  z-index: 10000000;
+  display: flex;
+  flex-direction: column;
+}
+.toggle_demo,
+.toggle_sale{
+  width: 66px;
+  height: 66px;
+  margin-bottom: 5px;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 20px 5px rgb(0 0 0 / 15%);
+  border-radius: 6px;
+}
+.icona{
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon_toggle > div.linea_corta{
+  width: 18px;
+  height: 2px;
+  margin-bottom: 1px;
+  background-color: #33475b;
+  border-radius: 3px;
+}
+.icon_toggle > div.linea_lunga{
+  width: 22px;
+  height: 2px;
+  margin-bottom: 1px;
+  background-color: #33475b;
+  border-radius: 3px;
+}
+.icon_toggle > div.rettangolo{
+  width: 26px;
+  height: 20px;
+  background-color: #33475b;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_toggle > div.rettangolo > i{
+  color: white;
+  font-size: 10px;
+}
+
+span.text_toggle{
+  font-size: 12px;
+  line-height: 1;
+  text-transform: none;
+  color: #4a5259;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+.icon_toggle span{
+  color: #65BC7B;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 
 /* HEARDER */
+header#site_header{
+  position: relative;
+}
 /** app_social **/
 .app_social{
   padding: 10px;
@@ -358,6 +441,10 @@ button{
   line-height: 17px;
   font-size: 14px;
 }
+button > i{
+  padding: 0 5px;
+  color: white;
+}
 button:hover{
   background: #ee5827;
 }
@@ -407,6 +494,7 @@ button:hover{
 }
 .insert > .item > img{
   width: 100%;
+  display: block;
 }
 
 /*** 2 #culinary_collection ***/
@@ -507,7 +595,8 @@ aside{
   margin-top: 105px;
 }
 .recipes img{
-  width: 100%
+  width: 100%;
+  display: block;
 }
 
 .lates_recipes{
@@ -526,6 +615,7 @@ aside{
 }
 .city img{
   width: 100%;
+  display: block;
 }
 .city_title{
   background:rgba(0,0,0,.8);
@@ -614,7 +704,7 @@ aside{
   background-repeat: no-repeat;
   border-radius: 50%;
   margin-right: 15px;
-  
+
 }
 .bgI_1{
   background-image: url('../images/single-post-img3.jpg');
@@ -635,7 +725,142 @@ aside{
 .text_article{
   font-size: 17px;
 }
+/* tweets */
+.tweets{
+  width: 100%;
+  background: white;
+  border-radius: 6px;
+  padding: 16px 16px 26px;
+  margin-bottom: 45px;
+}
+/* .title_logo_tweet */
+.tweets .title_logo_tweet{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.title_tweet h1{
+  font-size: 21px;
+  font-weight: normal;
+}
+.title_tweet span.link_tweet{
+  font-size: 12px;
+}
+.title_tweet span.link_tweet a{
+  color: #2B7BB9;
+}
+.title_logo_tweet .logo_tweet{
+  width: 18px;
+  height: 18px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_tweet a{
+  font-size: 12px;
+  color: #8899A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* . card_tweet */
+.tweets .card_tweet{
+  padding: 10px;
+}
+.tweets .card_tweet:hover{
+  background-color: #f5f8fa;
+}
+.tweets .card_tweet:hover .icon_tweet i{
+  color: #56ACEF;
+}
+.card_tweet .tweet_author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2px;
+}
+.tweet_author img{
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tweet_author .author{
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.author:hover span#title{
+  color: #56ACEF;
+}
 
+.author span#title{
+  font-size: 14px;
+  font-weight: bold;
+  color: #292F33;
+  padding-right: 4px;
+}
+.author span#subtitle{
+  font-size: 13px;
+  color: #657786;
+  padding-right: 4px;
+}
+.author .icon_tweet i{
+  color: #E1E8ED;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card_tweet p{
+  font-size: 14px;
+  margin-left: 40px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  color: #292F33;
+}
+.card_tweet p > a{
+  color: #2B7BB9;
+}
+.card_tweet p > a:hover{
+  color: #56ACEF;
+}
+
+.tweet_media{
+  margin-left: 40px;
+  margin-bottom: 12px;
+}
+.tweet_media img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.tweet_actions{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.tweet_actions i{
+  color: #657787;
+  margin-right: 25px;
+}
+.tweet_actions i.fa-heart:hover{
+  color: #E91E51;
+}
+.tweet_actions i.fa-sign-out-alt:hover{
+  color: #46B1F4;
+}
+.tweet_actions span{
+  font-size: 12px;
+  color: #667888
+}
 /*** 4 #subscribe ***/
 #subscribe{
   background-color: white;
@@ -705,6 +930,7 @@ aside{
 }
 #images img{
   width: 100%;
+  display: block;
 }
 /* CHIUSURA MAIN */
 
